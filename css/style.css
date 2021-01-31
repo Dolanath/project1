@@ -11,6 +11,7 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-border: #ccc;
 }
 
 /* Typography */
@@ -237,3 +238,55 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/* Input component styling */
+
+.input {
+  border-radius: 30px;
+  border: 1px solid var(--color-border);
+  color: var(--color-headings);
+  font-size: 2rem;
+  margin: 3rem;
+  outline: none;
+  padding: 1.5rem 3.5rem;
+}
+::placeholder {
+  color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}
+
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: 30px;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  margin: 12px;
+  padding: 1.5rem 1rem;
+}
+
+/* can put icons insted of button, can style anything */
+
+.btn-1 {
+  border-radius: 45px;
+  border: 1px solid var(--color-border);
+  padding: 4px 20px;
+  margin: 7px 5px;
+  font-weight: 500;
+  font-size: 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* Bottom up(components first) Top Down (page first) */
